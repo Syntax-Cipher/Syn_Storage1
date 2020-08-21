@@ -91,3 +91,5 @@ win_value1 = winner(0.8, 1.0, 0.8)
 print(win_value1)
 win_value2 = winner(1.2, 1.0, 1.2)
 print(win_value2)
+
+#multiply each individual's stat in stat matrix by multiplier, then add total stat numbers up and compare with other fighter to determine winner
