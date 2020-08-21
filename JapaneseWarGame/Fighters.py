@@ -68,22 +68,12 @@ class Fighters:
                 stam_mod, agi_mod, defence_mod)
 
 
-def winner(stam_mod, agi_mod, defence_mod):
-    calc_dict = [{st_mod: 1.0}, {ag_mod: 1.0}, {de_mod: 1.0}]
-    calc_dict[st_mod] *= stam_mod
-    calc_dict[ag_mod] *= agi_mod
-    calc_dict[de_mod] *= defence_mod
-    for key in calc_dict:
-        win_value = calc_dict[key]
-        win_value += win_value
-    return win_value
 
-
-samurai = Fighters("Sakai The Samurai", 90, 90, 90, 100)
+samurai = Fighters("Sakai The Samurai", 90, 80, 90, 100)
 print(samurai)
 print(samurai.stats_matrix())
 
-shinobi = Fighters("Ryozu The Shinobi", 80, 80, 80, 100)
+shinobi = Fighters("Ryozu The Shinobi", 80, 80, 70, 100)
 print(shinobi)
 print(shinobi.stats_matrix())
 
@@ -97,3 +87,5 @@ print(mods_one)
 mods_two = Fighters.fighter_two_mods(shinobi, samurai)
 print(mods_two)
 
+win_value1 = winner(0.8, 1.0, 0.8)
+print(win_value1)
