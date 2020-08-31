@@ -1,3 +1,2 @@
 # Syn_Storage1
-Would like a function that uses a dictionary to determing the winner & a parent/child class implementation to assist learning ...
-#multiply each individual's stat in stat matrix by a multiplier modification (stamina mod, defence mod etc.) Then, add total stat numbers up and compare with other fighter to determine winner who has the higher "win value"
+Now, just need to implement user input which puts in Fighter's Styles into winner method of type Styles & the call itself which is at the bottom of script
